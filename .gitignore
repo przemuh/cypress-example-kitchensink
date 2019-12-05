@@ -5,5 +5,7 @@ cypress/videos
 cypress/logs
 cypress/fixtures/profile.json
 cypress/fixtures/users.json
+cypress/results
+cypress/reports
 .history
 .vscode
