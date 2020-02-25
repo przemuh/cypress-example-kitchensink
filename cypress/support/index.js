@@ -30,9 +30,11 @@ Cypress.on('test:after:run', (test, runnable) => {
       nameParts.unshift(item.parent.title)
       item = item.parent
     }
-if(runnable.hookName) {
-            nameParts.push(`${runnable.hookName} hook`)
-        }
+
+    if (runnable.hookName) {
+      nameParts.push(`${runnable.hookName} hook`)
+    }
+    
     const fullTestName = nameParts
             .filter(Boolean)
             .join(' -- ')
